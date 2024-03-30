@@ -1,0 +1,157 @@
+:root{
+    /* ----Primary---- */
+    --green: hsl(75,94%, 57%);
+
+    /* ----Neutral---- */
+    --white: hsl(0,0%,100%);
+    --grey: hsl(0,0%,20%);
+    --dark-grey: hsl(0,0%,12%);
+    --off-black: hsl(0,0%,8%);
+
+    /* ----Typography---- */
+    --prghFnt: 1rem;
+}
+
+@font-face {
+    font-family: inter-Reg;
+    src: url(/assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: inter-SemiBold;
+    src:url(/assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: inter-Bold;
+    src: url(/assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--off-black);
+    text-align: center;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    font-family: inter-Bold;
+    color: var(--white);
+    min-height: 100vh;
+    padding-block: 1rem;
+}
+
+a{
+    margin-block: 4px;
+}
+
+:focus-visible{
+    outline: none;
+}
+
+.wrapper{
+    padding: 1.6rem;
+    border: none;
+    border-radius: 1em;
+    min-width: 300px;
+    max-width: 320px;
+    background: var(--dark-grey);
+    margin: auto;
+    font-size: var(--prghFnt);
+    font-family: inter-Reg;
+}
+
+.wrapper:hover, .wrapper:focus-visible{
+    border: .1px solid hsl(0,0%,30%);
+    box-shadow: 0px 0px 20px -10px hsl(0,0%,50%);
+    background: linear-gradient(hsla(0,0%,20%,90%),hsla(0,0%,12%, 100%),  hsl(0,0%,12%,50%));
+    backdrop-filter: blur(20px);
+}
+
+.wrapper .profileDetail .imgContainer{
+    margin-bottom: 25px;
+    border-radius: 176px;
+    width: 40%;
+}
+
+.wrapper .profileDetail div{
+    margin-bottom: 25px;
+}
+.wrapper .profileDetail .profileName{
+    font-size: .8em;
+}
+
+.wrapper .profileDetail .profileName p.userLocation{
+    padding-top: 10px; 
+    font-size: 1.15em;
+    color: var(--green);
+}
+   
+.wrapper .profileDetail  .aboutUser p{
+    font-size: 12px;
+    color: hsl(0,0%,70%);
+    padding-inline: 14px;
+}
+
+.wrapper .socialLinks{
+    align-items: unset;
+    width: 100%;
+}
+
+.wrapper .socialLinks  button.btnLink{
+    padding: 11px;
+    border-radius: 7px;
+    border: none;
+    background: var(--grey);
+    color: var(--white);
+    width: 100%;
+    font-size: var(--prghFnt);
+    font-family: inter-Reg;
+}
+
+
+.wrapper .socialLinks button:focus, .wrapper .socialLinks button:hover{
+    color: var(--off-black);
+    background: var(--green);
+    font-weight: bolder;
+}
+
+.wrapper .socialLinks button:hover{
+    cursor: pointer;
+}
+
+.wrapper .socialLinks a.first{
+    margin-top: 0;
+}
+
+.wrapper .socialLinks a.last{
+    margin-bottom: 0;
+}
+
+@media (max-width: 425px) {
+    main{
+        padding-block: 50px;
+    }
+
+    .wrapper{
+        width: 90%;
+        min-width: 295px;
+        max-width: 300px;
+    }
+
+    .wrapper .profileDetail .aboutUser p{
+        font-size: .7em;
+    }
+}
