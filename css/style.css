@@ -43,7 +43,8 @@ body{
 .flexCol{
     display: flex;
     flex-direction: column;
-    align-items: cente,justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 main{
     font-family: inter-Bold;
@@ -57,7 +58,7 @@ a{
 }
 
 
-ble{
+:focus-visible{
     outline: none;
 }
 
@@ -109,11 +110,8 @@ ble{
     align-items: unset;
     width: 100%;
 }
-.wrapper .socialLinks button.btnLink a{
-    font-family: inter-Reg;
-    color: var(--white);
-    font-size: var(--prghFnt);
-}
+.wrapper .socialLinks button.btnLink a{}
+    
 .wrapper .socialLinks  button.btnLink{
     margin-block: 4px;
     padding: 11px;
@@ -122,6 +120,8 @@ ble{
     background: var(--grey);
     width: 100%;
     color: var(--white);
+    font-family: inter-Reg;
+    font-size: var(--prghFnt);
 }
 
 .wrapper .socialLinks button.btnLink:focus, .wrapper .socialLinks button.btnLink:hover{
