@@ -1,5 +1,5 @@
 :root{
-    /* ----Primary---- */
+    /* ----Primary----  */
     --green: hsl(75,94%, 57%);
 
     /* ----Neutral---- */
@@ -43,8 +43,7 @@ body{
 .flexCol{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: cente,justify-content: center;
 }
 main{
     font-family: inter-Bold;
@@ -54,10 +53,11 @@ main{
 }
 
 a{
-    margin-block: 4px;
+    text-decoration: none;
 }
 
-:focus-visible{
+
+ble{
     outline: none;
 }
 
@@ -109,34 +109,36 @@ a{
     align-items: unset;
     width: 100%;
 }
-
+.wrapper .socialLinks button.btnLink a{
+    font-family: inter-Reg;
+    color: var(--white);
+    font-size: var(--prghFnt);
+}
 .wrapper .socialLinks  button.btnLink{
+    margin-block: 4px;
     padding: 11px;
     border-radius: 7px;
     border: none;
     background: var(--grey);
-    color: var(--white);
     width: 100%;
-    font-size: var(--prghFnt);
-    font-family: inter-Reg;
+    color: var(--white);
 }
 
-
-.wrapper .socialLinks button:focus, .wrapper .socialLinks button:hover{
+.wrapper .socialLinks button.btnLink:focus, .wrapper .socialLinks button.btnLink:hover{
     color: var(--off-black);
     background: var(--green);
     font-weight: bolder;
 }
 
-.wrapper .socialLinks button:hover{
+.wrapper .socialLinks button.btnLink:hover{
     cursor: pointer;
 }
 
-.wrapper .socialLinks a.first{
+.wrapper .socialLinks btnLink.first{
     margin-top: 0;
 }
 
-.wrapper .socialLinks a.last{
+.wrapper .socialLinks btnLink.last{
     margin-bottom: 0;
 }
 
