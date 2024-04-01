@@ -114,7 +114,7 @@ a{
     color: var(--white);
 }
 
-.wrapper .socialLinks button.btnLink a:hover, .wrapper . socialLinks button.btnLink a:focus{
+.wrapper .socialLinks button.btnLink a:hover, .wrapper .socialLinks button.btnLink a:focus{
     color: var(--off-black);
 }
 
