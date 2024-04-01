@@ -110,8 +110,14 @@ a{
     align-items: unset;
     width: 100%;
 }
-.wrapper .socialLinks button.btnLink a{}
-    
+.wrapper .socialLinks button.btnLink a{
+    color: var(--white);
+}
+
+.wrapper .socialLinks button.btnLink a:hover, .wrapper . socialLinks button.btnLink a:focus{
+    color: var(--off-black);
+}
+
 .wrapper .socialLinks  button.btnLink{
     margin-block: 4px;
     padding: 11px;
