@@ -14,22 +14,23 @@
 
 @font-face {
     font-family: inter-Reg;
-    src: url(/assets/fonts/static/Inter-Regular.ttf);
+    src: url(../assets/fonts/static/Inter-Regular.ttf);
     font-weight: 400;
 }
 
 @font-face{
     font-family: inter-SemiBold;
-    src:url(/assets/fonts/static/Inter-SemiBold.ttf);
+    src:url(../assets/fonts/static/Inter-SemiBold.ttf);
     font-weight: 600;
 }
 @font-face{
     font-family: inter-Bold;
-    src: url(/assets/fonts/static/Inter-Bold.ttf);
+    src: url(../assets/fonts/static/Inter-Bold.ttf);
     font-weight: 700;
 }
 
 *{
+    font-family: system-ui;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -110,15 +111,8 @@ a{
     align-items: unset;
     width: 100%;
 }
-.wrapper .socialLinks button.btnLink a{
-    color: var(--white);
-}
 
-.wrapper .socialLinks button.btnLink a:hover, .wrapper .socialLinks button.btnLink a:focus{
-    color: var(--off-black);
-}
-
-.wrapper .socialLinks  button.btnLink{
+.wrapper .socialLinks a.btnLink{
     margin-block: 4px;
     padding: 11px;
     border-radius: 7px;
@@ -128,23 +122,22 @@ a{
     color: var(--white);
     font-family: inter-Reg;
     font-size: var(--prghFnt);
+    display: block;
+    text-align: center;
 }
 
-.wrapper .socialLinks button.btnLink:focus, .wrapper .socialLinks button.btnLink:hover{
+.wrapper .socialLinks a.btnLink:focus, .wrapper .socialLinks a.btnLink:hover{
     color: var(--off-black);
     background: var(--green);
     font-weight: bolder;
-}
-
-.wrapper .socialLinks button.btnLink:hover{
     cursor: pointer;
 }
 
-.wrapper .socialLinks btnLink.first{
+.wrapper .socialLinks a.btnLink.first{
     margin-top: 0;
 }
 
-.wrapper .socialLinks btnLink.last{
+.wrapper .socialLinks a.btnLink.last{
     margin-bottom: 0;
 }
 
